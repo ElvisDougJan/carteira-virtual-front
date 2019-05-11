@@ -1,7 +1,5 @@
-# client-vimeo-uploader
+# Front Carteira Cliente
 
-## Disponível no surge.sh
-[vimeo-uploader](http://uploader-vimeo.surge.sh)
 
 ## Project setup
 ```
