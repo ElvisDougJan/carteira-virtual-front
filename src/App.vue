@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar color="primary" class="headline" dark>
+    <v-toolbar color="blue" class="headline" dark>
       <span style="text-align: center; width: 100%">Carteira virtual</span>
     </v-toolbar>
     <v-layout row wrap>
@@ -45,5 +45,8 @@ export default {
 </script>
 
 <style>
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
 </style>
 
