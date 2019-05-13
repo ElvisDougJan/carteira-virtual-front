@@ -13,7 +13,7 @@
         <v-text-field label="Descrição" box v-model="novaSaida.descricao"></v-text-field>
       </v-layout>
       <v-layout row wrap justify-end>
-        <v-btn color="success" round class="elevation-0" @click="criaNovaSaida">Salvar</v-btn>
+        <v-btn color="green lighten-1" dark round class="elevation-0" @click="criaNovaSaida">Salvar</v-btn>
       </v-layout>
     </v-card>
   </div>
