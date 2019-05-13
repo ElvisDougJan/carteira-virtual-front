@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// import Grafico from '@/pages/Grafico.vue'
-
 Vue.use(Router)
 
 const router = new Router({
@@ -11,6 +9,16 @@ const router = new Router({
       path: '/',
       name: 'Grafico',
       component: () => import('@/pages/Grafico.vue')
+    },
+    {
+      path: '/movimentacao',
+      name: 'Movimentacao',
+      component: () => import('@/pages/Movimentacao.vue')
+    },
+    {
+      path: '/lista-movimentacoes',
+      name: 'ListaMovimentacoes',
+      component: () => import('@/pages/Listas.vue')
     }
   ]
 })
