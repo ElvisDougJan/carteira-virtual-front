@@ -32,8 +32,7 @@ export default {
 
   methods: {
     async criarNovaEntrada() {
-      console.log(this.novaEntrada)
-      await axios.post('http://localhost:3000/entrada', this.novaEntrada)
+      await axios.post(`${process.env.VUE_APP_API}entrada`, this.novaEntrada)
         .then(() => {
           this.$emit('atualizaDeposito')
         })

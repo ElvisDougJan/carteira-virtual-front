@@ -26,9 +26,7 @@ export default {
 
   watch: {
     atualizaDeposito: function () {
-      console.log(this.atualizaDeposito)
       if (this.atualizaDeposito) {
-        console.log('jkfjdkl')
         this.consultaDeposito()
       }
     }
@@ -37,7 +35,7 @@ export default {
   methods: {
     async consultaDeposito() {
       this.qtdDeposito = 0
-      await axios.get('http://localhost:3000/deposito')
+      await axios.get(`${process.env.VUE_APP_API}deposito`)
         .then(res => this.qtdDeposito = res.data.qtdDeposito)
         .catch(err => console.error('ERRO AO CONSULTAR DEPOSITO', err))
       }

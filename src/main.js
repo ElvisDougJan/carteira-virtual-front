@@ -6,6 +6,7 @@ import vueVimeoPlayer from 'vue-vimeo-player'
 Vue.config.productionTip = false
 Vue.use(vueVimeoPlayer)
 
+
 new Vue({
   render: h => h(App)
 }).$mount('#app')

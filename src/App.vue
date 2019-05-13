@@ -35,7 +35,6 @@ export default {
 
   methods: {
     atualizarDeposito() {
-      console.log(this.atualizaDeposito)
       setTimeout(() => {
         this.atualizaDeposito = true
       }, 100)

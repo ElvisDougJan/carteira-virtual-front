@@ -32,7 +32,7 @@ export default {
 
   methods: {
     async criaNovaSaida () {
-      await axios.post('http://localhost:3000/saida', this.novaSaida)
+      await axios.post(`${process.env.VUE_APP_API}saida`, this.novaSaida)
         .then(() => {
           this.$emit('atualizaDeposito')
         })
